@@ -44,3 +44,19 @@ npm run dev
 - Gerçek proje görselleri ve proje detay sayfaları ekleyin
 - Form doğrulama ve spam koruması (reCAPTCHA, CAPTCHA)
 - CI/CD ve hosting (Vercel önerilir)
+
+Otomatik Deploy (hazır)
+
+Bu repo Vercel ile otomatik deploy edecek şekilde bir GitHub Actions workflow içerir.
+
+Yapmanız gerekenler:
+
+1. Vercel hesabı oluşturun (https://vercel.com) ve proje ekleyin.
+2. GitHub repository'nizde `Settings -> Secrets -> Actions` altına şu üç secret'ı ekleyin:
+	- `VERCEL_TOKEN` (Vercel kişisel erişim token)
+	- `VERCEL_ORG_ID` (Vercel organisation ID)
+	- `VERCEL_PROJECT_ID` (Vercel project ID)
+
+3. `main` branch'e push yaptığınızda workflow otomatik çalışacak ve siteyi Vercel'e deploy edecektir.
+
+Eğer isterseniz, token ve ID bilgilerini verirseniz ben deploy'u sizin adınıza başlatabilirim.
