@@ -11,6 +11,20 @@ export const metadata = {
   }
 }
 
+export const openGraph = {
+  title: 'ROCK — Interior Architecture & Design',
+  description: 'ROCK — mekan tasarımı ve iç mimari çözümleri.',
+  url: 'https://your-domain.example',
+  images: [
+    {
+      url: '/favicon.svg',
+      width: 800,
+      height: 600,
+      alt: 'ROCK'
+    }
+  ],
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr">
